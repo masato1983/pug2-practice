@@ -9,11 +9,13 @@ html(lang="ja")
       meta(http-equiv="X-UA-Compatible", content="ie=edge")
     block title
     block links
+      link(rel="stylesheet", href="/stylesheets/main.css")
   body
     include includes/_header.pug
 
     block content
 
     block scripts
+      script(src="/js/my.js")
 
     block footer
