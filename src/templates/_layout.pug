@@ -1,12 +1,14 @@
 doctype heml
 html(lang="ja")
   head
-    meta(charset="UTF-8")
-    meta(name="keywords", content="ここにサイトのキーワードを記述する")
-    meta(name="description", content="ここにサイトの概要を記述する")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    block metatags
+      meta(charset="UTF-8")
+      meta(name="keywords", content="ここにサイトのキーワードを記述する")
+      meta(name="description", content="ここにサイトの概要を記述する")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      meta(http-equiv="X-UA-Compatible", content="ie=edge")
     block title
+    block links
   body
     include includes/_header.pug
 
