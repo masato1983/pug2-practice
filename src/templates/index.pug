@@ -5,14 +5,21 @@ html(lang='ja')
     meta(charset='utf-8')
     title Home
   body
+    |
     audio(loop controls)
+    |
+    |
     a(
       href="#",
       target="_blank",
       rel="noopener noreferrer"
     ) Text here
-
+    |
+    |
     a#mylink.class1(href="#")&attributes({
       'target': '_blank',
       'rel': 'noopener noreferrer'
     }) Text here
+    |
+    |
+    a(style={color: 'red', background: 'green'}) Text here
