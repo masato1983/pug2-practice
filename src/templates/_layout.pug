@@ -6,7 +6,12 @@ html(lang="ja")
     meta(name="description", content="ここにサイトの概要を記述する")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title ここにタイトルを記述する
+    block title
   body
-    //- content here
     include includes/_header.pug
+
+    block content
+
+    block scripts
+
+    block footer
