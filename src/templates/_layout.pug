@@ -1,0 +1,21 @@
+doctype heml
+html(lang="ja")
+  head
+    block metatags
+      meta(charset="UTF-8")
+      meta(name="keywords", content="ここにサイトのキーワードを記述する")
+      meta(name="description", content="ここにサイトの概要を記述する")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    block title
+    block links
+      link(rel="stylesheet", href="/stylesheets/main.css")
+  body
+    include includes/_header.pug
+
+    block content
+
+    block scripts
+      script(src="/js/my.js")
+
+    block footer

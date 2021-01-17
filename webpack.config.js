@@ -17,7 +17,8 @@ module.exports = {
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new HtmlWebpackPlugin({
       title: 'Home',
-      template: 'src/templates/index.pug'
+      template: 'src/templates/index.pug',
+      inject: false
     }),
     new MiniCssExtractPlugin({
       filename: 'stylesheets/[name].css'
