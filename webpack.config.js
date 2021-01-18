@@ -66,12 +66,15 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        use: {
-            loader: 'pug-loader',
+        use: [
+          'html-loader',
+          {
+            loader: 'pug-html-loader',
             options: {
               pretty: true
+            }
           }
-        }
+        ]
       },
     ],
   },
