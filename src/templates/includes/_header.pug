@@ -4,6 +4,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
     span.navbar-toggler-icon
   #navbarNavAltMarkup.collapse.navbar-collapse
     .navbar-nav
-      a.nav-link(href='#') ホーム
+      a.nav-link(href='index.html' class={active: currentUrl === 'index.html'}) ホーム
       a.nav-link(href='#') 自己紹介
-      a.nav-link(href='#') 連絡先
+      a.nav-link(href='contact.html' class={active: currentUrl === 'contact.html'}) 連絡先
