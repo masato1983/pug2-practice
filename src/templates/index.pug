@@ -1,5 +1,10 @@
 extends extends/_layout.pug
 
+block append config
+  - var subTitle = 'Home'
+  - var Description = 'このページの概要を記述する'
+  - var Keywords = 'このページのキーワードを記述する'
+
 block content
   div.wrapper
     h1 #{mainTitle}
