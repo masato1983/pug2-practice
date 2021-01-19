@@ -16,7 +16,10 @@ html(lang=lang)
       if Googlefonts
         link(rel="preconnect" href="https://fonts.gstatic.com")
         link(href="https://fonts.googleapis.com/css2?family="+Googlefonts+"&display=swap" rel="stylesheet")
-      link(rel="stylesheet", href=cssPath+"main.css")
+      if FontAwesome
+        script(defer src="/your-path-to-fontawesome/js/brands.js")
+        script(defer src="/your-path-to-fontawesome/js/solid.js")
+        script(defer src="/your-path-to-fontawesome/js/fontawesome.js")
   body
     include ../includes/_header.pug
 
