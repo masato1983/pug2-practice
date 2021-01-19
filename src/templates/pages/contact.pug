@@ -1,0 +1,15 @@
+extends ../extends/_layout.pug
+
+block append config
+  - var subTitle = 'Contact'
+  - var Description = 'このページの概要を記述する'
+  - var Keywords = 'このページのキーワードを記述する'
+
+block content
+  div.wrapper
+    h1 #{mainTitle}
+    h2 #{subTitle}
+    p コンテンツを追加してください
+
+block append scripts
+  script(src=jsPath+"slider.js")

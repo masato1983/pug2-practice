@@ -20,6 +20,10 @@ module.exports = {
       template: 'src/templates/index.pug',
       // inject: false
     }),
+    new HtmlWebpackPlugin({
+      template: 'src/templates/pages/contact.pug',
+      filename: 'contact.html'
+    }),
     new MiniCssExtractPlugin({
       filename: 'stylesheets/[name].css'
     }),
