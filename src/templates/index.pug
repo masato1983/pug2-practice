@@ -13,3 +13,11 @@ block content
 
 block append scripts
   script(src=jsPath+"slider.js")
+  script.
+    let btn =
+    document.getElementsByClassName('btn-primary')[0];
+
+    btn.onclick = function () {
+      btn.style.background =
+      'transparent';
+    }
