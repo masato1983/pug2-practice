@@ -1,9 +1,15 @@
+mixin menu(menu_items)
+  .navbar-nav
+    each item in menu_items
+      a.nav-link(href=item.href class= {active: currentUrl === item.href}) #{item.title}
+
 nav.navbar.navbar-expand-lg.navbar-light.bg-light
   a.navbar-brand(href='#') Navbar
   button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
     span.navbar-toggler-icon
   #navbarNavAltMarkup.collapse.navbar-collapse
-    .navbar-nav
-      a.nav-link(href='index.html' class={active: currentUrl === 'index.html'}) ホーム
-      a.nav-link(href='#') 自己紹介
-      a.nav-link(href='contact.html' class={active: currentUrl === 'contact.html'}) 連絡先
+    +menu([
+      {'title': 'ホーム', 'href' : 'index.html'},
+      {'title': '自己紹介', 'href' : '#'},
+      {'title': '連絡先', 'href': 'contact.html'}
+    ])
