@@ -21,6 +21,10 @@ module.exports = {
       // inject: false
     }),
     new HtmlWebpackPlugin({
+      template: 'src/templates/pages/about.pug',
+      filename: 'about.html'
+    }),
+    new HtmlWebpackPlugin({
       template: 'src/templates/pages/contact.pug',
       filename: 'contact.html'
     }),

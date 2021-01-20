@@ -1,0 +1,17 @@
+extends ../extends/_layout.pug
+
+block append config
+  - var subTitle = 'About'
+  - var Description = 'このページの概要を記述する'
+  - var Keywords = 'このページのキーワードを記述する'
+  - var currentUrl = 'about.html'
+
+block content
+  div.wrapper
+    h1 #{mainTitle}
+    h2 #{subTitle}
+    p コンテンツを追加してください
+    img(src="../../images/icon.png", alt="" style={display: 'block', margin: 'auto'})
+
+block append scripts
+  script(src=jsPath+"slider.js")
